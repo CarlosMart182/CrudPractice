@@ -12,11 +12,28 @@ public class Test {
     public static void main(String[] args) {
         //conex();
         //readAll();
-        create();
+        //create();
+        //update();
+        read();
+        //delete();
+    }
+
+    private static void delete() {
+        System.out.println(dao.delete(3));
+    }
+
+    private static void read() {
+        //Employee DTO = new Employee();
+        System.out.println(dao.read(1));
+    }
+
+    private static void update() {
+        Employee DTO = new Employee(2,"Daniel","Escobar",new Date(1992/06/15),"M",1300);
+        System.out.println(dao.update(DTO));
     }
 
     private static void create() {
-        Employee DTO = new Employee(110,"Maria","Rodriguez", new Date(1992/01/21),"M",2500);
+        Employee DTO = new Employee("Melisa","Alas", new Date(1991/06/20),"F",3500);
         System.out.println(dao.create(DTO));
     }
 

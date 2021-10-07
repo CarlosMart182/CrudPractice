@@ -20,15 +20,16 @@ public class Employee {
     }
 
     public Employee() {
+
+    }
+
+    public Employee(int emp_id, String first_name, String last_name, Date birth_day, String sex, int salary) {
         this.emp_id = emp_id;
         this.first_name = first_name;
         this.last_name = last_name;
         this.birth_day = birth_day;
         this.sex = sex;
         this.salary = salary;
-    }
-
-    public Employee(int emp_id, String carlos, String martinez, java.util.Date birth_day, String m, int salary) {
     }
 
     public int getEmp_id() {
